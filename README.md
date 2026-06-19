@@ -6,18 +6,24 @@
 ▼
 
 
-┌───────────────────┐│  Controller Layer │ ── Handles HTTP transport, maps JSON payloads, exposes REST routes
+┌───────────────────┐│  Controller Layer │ ── Handles HTTP transport,
+                                               maps JSON payloads, exposes REST routes
+                                               
 └─────────┬─────────┘│ (Loosely Coupled DTOs / Entities)
 
 ▼
 
 
-┌───────────────────┐│   Service Layer   │ ── Encapsulates core domain rules and transaction boundaries
+┌───────────────────┐│   Service Layer   │ ── Encapsulates core domain rules 
+                                                   and transaction boundaries
+                                                   
 └─────────┬─────────┘│ (Managed Entities)
 
 ▼
 
-┌───────────────────┐│ Repository Layer  │ ── Translates operations to SQL via Spring Data JPA / Hibernate
+┌───────────────────┐│ Repository Layer  │ ── Translates operations 
+                                          to SQL via Spring Data JPA / Hibernate
+                                          
 └─────────┬─────────┘│
 ▼
 [( PostgreSQL )]
